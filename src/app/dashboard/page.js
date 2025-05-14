@@ -22,10 +22,10 @@ export default async function DashboardPage() {
     <div className="min-h-screen bg-gray-600">
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-50">Dashboard</h1>
+        <h1 className="text-4xl font-extrabold text-gray-900 shadow-lg">Dashboard</h1>
           <div className="flex items-center space-x-4">
-            <span className="text-gray-900 text-2xl">Welcome, {user.name}</span>
-            <form action={async () => {
+            <span className="text-3xl font-semibold text-gray-900 shadow-md">Welcome, {user.name}</span>
+              <form action={async () => {
               'use server';
               await destroySession();
               redirect('/login');
